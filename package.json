@@ -1,7 +1,7 @@
 {
   "name": "folder-structure-visualizer",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -27,5 +27,16 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "vite": "^7.3.1"
-  }
+  },
+  "description": "Browser-based folder structure generator/visualizer with drag & drop, templates, and PNG/SVG export.",
+  "license": "MIT",
+  "keywords": [
+    "folder-structure",
+    "tree",
+    "diagram",
+    "visualizer",
+    "drag-and-drop",
+    "vite",
+    "react"
+  ]
 }
