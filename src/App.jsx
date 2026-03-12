@@ -402,36 +402,121 @@ const TEMPLATES = {
     name: "my-react-app",
     kind: "folder",
     children: [
-      { name: "src", kind: "folder", children: [{ name: "App.jsx", kind: "file" }, { name: "main.jsx", kind: "file" }] },
+      {
+        name: "src",
+        kind: "folder",
+        children: [
+          { name: "App.jsx", kind: "file" },
+          { name: "main.jsx", kind: "file" }
+        ]
+      },
       { name: "public", kind: "folder", children: [] },
       { name: "package.json", kind: "file" },
       { name: "vite.config.js", kind: "file" },
       { name: "README.md", kind: "file" },
-      { name: ".gitignore", kind: "file" },
-    ],
+      { name: ".gitignore", kind: "file" }
+    ]
   },
   "Python package": {
     name: "my-python-project",
     kind: "folder",
     children: [
-      { name: "src", kind: "folder", children: [{ name: "my_package", kind: "folder", children: [{ name: "__init__.py", kind: "file" }] }] },
-      { name: "tests", kind: "folder", children: [{ name: "test_smoke.py", kind: "file" }] },
+      {
+        name: "src",
+        kind: "folder",
+        children: [
+          {
+            name: "my_package",
+            kind: "folder",
+            children: [{ name: "__init__.py", kind: "file" }]
+          }
+        ]
+      },
+      {
+        name: "tests",
+        kind: "folder",
+        children: [{ name: "test_smoke.py", kind: "file" }]
+      },
       { name: "pyproject.toml", kind: "file" },
       { name: "README.md", kind: "file" },
       { name: "requirements.txt", kind: "file" },
-      { name: ".gitignore", kind: "file" },
-    ],
+      { name: ".gitignore", kind: "file" }
+    ]
   },
   "Writing project": {
     name: "my-book",
     kind: "folder",
     children: [
-      { name: "chapters", kind: "folder", children: [{ name: "01-opening.md", kind: "file" }, { name: "02-middle.md", kind: "file" }] },
-      { name: "notes", kind: "folder", children: [{ name: "research.md", kind: "file" }, { name: "ideas.md", kind: "file" }] },
-      { name: "assets", kind: "folder", children: [{ name: "cover.png", kind: "file" }] },
-      { name: "README.md", kind: "file" },
-    ],
+      {
+        name: "chapters",
+        kind: "folder",
+        children: [
+          { name: "01-opening.md", kind: "file" },
+          { name: "02-middle.md", kind: "file" }
+        ]
+      },
+      {
+        name: "notes",
+        kind: "folder",
+        children: [
+          { name: "research.md", kind: "file" },
+          { name: "ideas.md", kind: "file" }
+        ]
+      },
+      {
+        name: "assets",
+        kind: "folder",
+        children: [{ name: "cover.png", kind: "file" }]
+      },
+      { name: "README.md", kind: "file" }
+    ]
   },
+  "eBook": {
+    name: "my-ebook",
+    kind: "folder",
+    children: [
+      {
+        name: "front-matter",
+        kind: "folder",
+        children: [
+          { name: "title-page.md", kind: "file" },
+          { name: "copyright.md", kind: "file" },
+          { name: "dedication.md", kind: "file" },
+          { name: "table-of-contents.md", kind: "file" }
+        ]
+      },
+      {
+        name: "chapters",
+        kind: "folder",
+        children: [
+          { name: "01-introduction.md", kind: "file" },
+          { name: "02-chapter-one.md", kind: "file" },
+          { name: "03-chapter-two.md", kind: "file" },
+          { name: "04-conclusion.md", kind: "file" }
+        ]
+      },
+      {
+        name: "back-matter",
+        kind: "folder",
+        children: [
+          { name: "appendix.md", kind: "file" },
+          { name: "resources.md", kind: "file" },
+          { name: "about-the-author.md", kind: "file" }
+        ]
+      },
+      {
+        name: "assets",
+        kind: "folder",
+        children: [
+          { name: "cover.jpg", kind: "file" },
+          { name: "images", kind: "folder", children: [] }
+        ]
+      },
+      { name: "book-description.md", kind: "file" },
+      { name: "metadata.json", kind: "file" },
+      { name: "README.md", kind: "file" }
+    ]
+  }
 };
 
 export default function App() {
