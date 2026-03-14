@@ -2,6 +2,8 @@
 
 A **browser-based** folder / file tree builder with a clean, shareable visual output.
 
+<img src="https://raw.githubusercontent.com/monapdx/folder-structure-generator/refs/heads/main/screenshot.png">
+
 Build a folder structure, reorganize it with true drag & drop, and export a polished diagram for README files, pitches, docs, or planning.
 
 ## Features
